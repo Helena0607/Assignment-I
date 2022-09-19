@@ -15,4 +15,4 @@ This repository includes 5 pages (Home page, About Page, Menu Page, Blog Page & 
 - Customer's review 
 ## Contact Us Page
 - Booking form & Contact Information
-- 
+
