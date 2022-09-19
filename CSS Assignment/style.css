@@ -1,0 +1,306 @@
+body{
+    margin:0;
+    padding:0;
+    background-color:black;
+}
+
+/* Navigation Bar */
+
+.content{
+    
+    margin:auto;
+}
+
+.container .nav-bar{
+    display:flex;
+    justify-content: space-between;
+    background-color:gold;
+    font-weight: bold;
+    font-size: large;
+}
+
+.nav-bar .left-nav-bar{
+    align-self:start;
+    margin-left:50px;
+    padding:10px 15px;
+}
+
+.nav-bar .right-nav-bar{
+    align-self:end;
+    margin-right:80px;
+    padding:10px 15px;
+}
+
+.nav-bar .left-nav-bar span,
+.nav-bar .right-nav-bar span{
+    padding:10px;
+}
+
+
+.left-nav-bar a{
+    text-decoration:none;
+    
+}
+
+.left-nav-bar a:hover{
+    color:white;
+}
+
+.left-nav-bar a:active{
+    color:rgb(213, 56, 56);      
+}
+
+/* About Page */
+.content{
+    margin:10px;
+    font-size:15px;
+    letter-spacing:3px;
+}
+
+
+.content-text{
+    text-align:center;
+    margin:15px 50px 10px 50px;
+    padding:20px;
+    line-height:2em;
+    
+}
+
+.sub-content-img img{
+    margin-left:80px;
+    float:left;
+    border:2px solid gold;
+    border-radius:10px;
+    margin-right:80px;
+    margin-bottom:10px;
+    box-shadow:3px 2px white;
+}
+
+.sub-content-list h1,
+.sub-content-list li{
+    color:white;
+}
+
+.sub-content-list{
+   line-height:2.8em;
+}
+
+.sub-content-list li{
+    list-style-type: square;
+}
+
+
+/*Home Page */
+
+#coffee-bean{
+    position:absolute;
+	z-index:1;
+}
+
+#coffee-logo{
+    position:absolute;
+    top:82px;
+    z-index:2;
+    animation:move 5s infinite;
+    animation-timing-function:ease-in-out;
+}
+
+@keyframes move{
+    from{left:0px;}
+    to{left:50px;}
+}
+
+#logo-text{
+    z-index:3;
+    position:absolute;
+    top:360px;
+    left:80px;
+    color:gold;
+    text-shadow:2px 2px black;
+    font-size:50px;
+}
+
+.index-footer{
+    position: absolute;
+    top:600px;
+}
+
+.index-footer #footer{
+    color:white;
+    text-align:center;
+    margin:0;
+    padding-left:80px;
+    width:1500px;
+    background-color:grey;
+    height:50px;
+    line-height:7vh;
+}
+
+/*Blog Page*/
+.blog-content-card{
+    margin:40px;
+}
+
+.blog-content-card .blog-content-text {
+    color:white;  
+    padding:10px;  
+    line-height:3em;
+}
+
+.blog-content-card .blog-content-img img{
+    margin:10px 30px 30px 50px;  
+    border-radius:8px;
+    border:1px solid white;
+    box-shadow:2px 3px gold;
+    float:left;  
+    transition:width 2s, height 2s, transform 2s;  
+    
+}
+
+.blog-content-card .blog-content-img img:hover{
+    width:300px;
+    height:250px;
+    transform:translate(20px, 20px);
+}
+
+.blog-content-text .checked{
+    color:gold;    
+}
+
+
+
+/* Contact Page */
+.contact-form h1{
+    color:white;
+    text-align:center;
+    font-size:50px;    
+    letter-spacing:10px;
+}
+
+.booking-form-table{    
+    float:left;
+    width:40%;
+    color: white;
+    padding:5px;
+    margin:20px;  
+    background-image:linear-gradient(to top right, gold,rgb(235, 219, 132),yellow,white);
+    border:3px solid white;
+    border-radius:10%;
+    margin-right:100px;
+    margin-left:80px;
+}
+
+.booking-form-table h2{
+    color:black;
+    text-align:center;
+    text-transform:uppercase;
+    letter-spacing:3px;
+    text-shadow:2px 2px rgb(128, 141, 228);
+}
+
+.booking-form-table .booking-form{
+    margin:10px 30px 15px 10px;    
+    color:rgb(72, 74, 193);
+}
+
+.booking-table tr > td{
+    margin:30px 50px;
+    padding:8px 10px 5px 90px;
+    
+}
+
+#input-group{
+    border-radius:5px;
+    border:none;
+    height:30px;
+    width:300px;
+    border:1px solid black;
+    transition: width 1s;
+}
+
+#input-group:hover{
+    width:350px;
+    border:1px dotted rgb(83, 83, 178);
+}
+
+.booking-table tr td::first-letter{
+    color:blue;
+    font-size:larger;
+}
+
+.booking-table tr td > button{
+    width:300px;
+    height:30px;
+    margin-top:10px;
+    border-radius:5px;
+    border:none;
+    margin-bottom:15px;
+    text-align:center;
+    letter-spacing:3px;
+    font-size:15px;
+    transition:0.3s;
+}
+
+.booking-table tr td > button:hover{
+    background-color:black;
+    color:white;
+}
+
+/* contact Info */
+
+.contact-info fieldset{
+    width:600px;
+    color:white;
+    margin:10px;
+    padding-left:40px;
+    height:740px;
+    
+}
+
+.contact-info fieldset legend{
+    font-size:23px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    text-shadow:2px 2px rgb(128, 141, 228);
+}
+
+.contact-info fieldset h3{
+    color:rgb(101, 101, 200);
+}
+
+.contact-info fieldset h3::first-letter{
+    font-size: larger;
+    color:rgb(6, 109, 227);
+}
+
+.contact-info fieldset p{
+    font-size:18px;    
+}
+
+.contact-info #contact-btn{
+    height:32px;
+    border-radius:5px;
+    width:130px;
+    margin:auto;
+}
+
+.contact-info fieldset > img{
+    border-radius:5px;
+    border:2px solid gold;
+    opacity:0.7;
+}
+
+
+/* Footer */
+.footer p{
+    clear: both;
+    color:white;
+    text-align:center;
+    background-color:grey;
+    margin:0;
+    padding:3px;
+    height:50px;
+    line-height:7vh;
+}
+
+
